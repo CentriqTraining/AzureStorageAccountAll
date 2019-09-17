@@ -1,0 +1,8 @@
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\bin\Debug\AzureAccountManager.dll
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\bin\Debug\AzureAccountManager.pdb
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\bin\Debug\System.Management.Automation.dll
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\obj\Debug\AzureAccountManager.csprojAssemblyReference.cache
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\obj\Debug\AzureAccountManager.csproj.CoreCompileInputs.cache
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\obj\Debug\AzureAccountManager.csproj.CopyComplete
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\obj\Debug\AzureAccountManager.dll
+e:\Documents\GitHub\AzureStorageAccountAll\WpfApplication2\AzureAccountManager\AzureAccountManager\obj\Debug\AzureAccountManager.pdb

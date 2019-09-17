@@ -19,13 +19,10 @@ namespace AzureStorageTools
         private CloudBlobClient _Client;
         public AzureStorageAccount()
         {
-            string AZConnectionString = ConfigurationManager
-                            .ConnectionStrings["AzureStorageAccount"]
-                            .ConnectionString;
+            string AZConnectionString = File.ReadAllText("../../SetupFiles/keys.config");
             _Acct = CloudStorageAccount.Parse(AZConnectionString);
 
             _Client = _Acct.CreateCloudBlobClient();
-
         }
         public BlobContainerHandler GetContainer(string containerName)
         {

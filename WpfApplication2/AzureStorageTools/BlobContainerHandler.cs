@@ -19,7 +19,7 @@ namespace AzureStorageTools
         {
             return _Container.ListBlobs().Select(b => b.Uri);
         }
-        public T BlobHandler<T>() where T : Interfaces.BlobHandler
+        public T BlobHandler<T, TBlobType>() where T : Interfaces.BlobHandler<TBlobType>
         {
             return (T)Activator.CreateInstance(typeof(T), _Container);
         }

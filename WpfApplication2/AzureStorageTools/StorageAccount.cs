@@ -1,7 +1,7 @@
-﻿using AzureStorageTools.Interfaces;
-using Microsoft.Azure.KeyVault;
+﻿using Microsoft.Azure.KeyVault;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -19,8 +19,9 @@ namespace AzureStorageTools
         private CloudBlobClient _Client;
         public AzureStorageAccount()
         {
-            string AZConnectionString = File.ReadAllText("../../SetupFiles/keys.config");
-            _Acct = CloudStorageAccount.Parse(AZConnectionString);
+            string ConfigFileContentString = File.ReadAllText("../../Configuration/config.json");
+            var Config  = JsonConvert.DeserializeObject<Dictionary<string, string>>(ConfigFileContentString);
+            _Acct = CloudStorageAccount.Parse(Config["connectionString"]);
 
             _Client = _Acct.CreateCloudBlobClient();
         }

@@ -1,4 +1,5 @@
-﻿using AzureStorageTools.BlobHandlers;
+﻿using AzureStorageTools.BaseClasses;
+using AzureStorageTools.BlobHandlers;
 using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace AzureStorageTools
         {
             return _Container.ListBlobs().Select(b => b.Uri);
         }
-        public T BlobHandler<T, TBlobType>() where T : Interfaces.BlobHandler<TBlobType>
+        public T BlobHandler<T>() where T : IBlobHandler
         {
             return (T)Activator.CreateInstance(typeof(T), _Container);
         }

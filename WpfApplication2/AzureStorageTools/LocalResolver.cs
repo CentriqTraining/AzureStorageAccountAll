@@ -11,10 +11,7 @@ namespace AzureStorageTools
     public class LocalResolver : IKeyResolver
     {
         private static LocalResolver _Instance;
-        private LocalResolver()
-        {
-
-        }
+        private LocalResolver() { }
         public static LocalResolver Current
         {
             get

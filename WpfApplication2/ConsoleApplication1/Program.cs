@@ -1,5 +1,6 @@
 ﻿using AzureStorageTools;
 using AzureStorageTools.BlobHandlers;
+using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
